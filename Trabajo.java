@@ -5,13 +5,15 @@ public class Trabajo {
 
     public static int obtenerNumeros(String mensaje) {
         int numeroTemporal = 0;
-        do {
+        System.out.println(mensaje);
+        numeroTemporal = scanner.nextInt();
+
+        while (numeroTemporal <= 0) {
+            System.out.println("Por favor, ingresa un número positivo mayor a cero.");
             System.out.println(mensaje);
             numeroTemporal = scanner.nextInt();
-            if (numeroTemporal <= 0) {
-                System.out.println("Por favor, ingresa un número positivo mayor a cero.");
-            }
-        } while (numeroTemporal <= 0);
+        }
+
         return numeroTemporal;
     }
 
