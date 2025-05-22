@@ -18,7 +18,7 @@ public class Trabajo {
     public static void main(String[] args) {
         int numero = obtenerNumeros("Ingresa un número:");
         int numero2 = obtenerNumeros("Ingresa otro número:");
-        int resultado = numero + numero2;
+        int resultado = numero / numero2;
         System.out.println("El resultado es: " + resultado);
     }
 }
